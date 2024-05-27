@@ -1,0 +1,79 @@
+/* Estilos CSS para el checkout */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #161616;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.centered-content {
+    max-height: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #ff8800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc6600;
+}
+
+#purchase-policy {
+    font-size: 14px;
+    color: #666;
+}
+
+#card-type {
+    margin-top: 10px;
+}
+
+.card-icon {
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+}

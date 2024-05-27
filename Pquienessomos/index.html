@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - WebUniCode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1QPZaPcFYhgrjXib7rDn8t0fVzJAnfLGG9hbJY5u9yFhtVQuKphDqX+yPfJ1BUxY8L9vsmBqN8gufLpNtcZUlw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/img/ICON.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="centered-content">
+            <img src="/img/ICON-BLANCO.svg" alt="Icono" style="width: 60px; height: 60px; margin-right: -21%;">
+            <h1><a href="/Pprincipal/index.html" style="text-decoration: none; color: inherit;">WebUniCode</a></h1>
+            <div class="menu">
+                <div class="menu-item">
+                    Cursos &#9660;
+                    <div class="menu-dropdown">
+                        <div class="menu-item">HTML</div>
+                        <div class="menu-item">CSS</div>
+                        <div class="menu-item">JavaScript</div>
+                        <div class="menu-item">PHP</div>
+                    </div>
+                </div>
+                <div class="menu-item highlight"><a href="/Pplus/index.html" style="text-decoration: none; color: inherit;">Plus</a></div>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar...">
+                    <button id="searchButton">&#128269;</button>
+                </div>
+                <div class="menu-item">
+                    <span class="cart-icon">&#128722;</span> Tienda
+                </div>
+                <div class="menu-item">
+                    <a href="#" onclick="showPopup()" style="text-decoration: none; color: inherit;">
+                        <span class="account-icon">&#128100;</span> Entrar
+                    </a>
+                </div>                                
+                <button class="join-button"><a href="/Pregistro/index.html" style="text-decoration: none; color: inherit;">Únete Gratis</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <br>
+        <h2>Quiénes Somos</h2>
+        <p>En WebUniCode, nos dedicamos a proporcionar los mejores cursos en línea de programación web. Nuestra misión es capacitar a personas interesadas en aprender, brindándoles las herramientas y el conocimiento necesarios para sobresalir en el mundo digital.</p>
+        <p>Nuestro equipo está compuesto por expertos en desarrollo web. Nos esforzamos por mantenernos a la vanguardia de las últimas tecnologías y metodologías para ofrecer contenido de alta calidad a nuestros estudiantes.</p>
+        <p>Además, nos enorgullece ofrecer una amplia selección de cursos de uso libre, los cuales son cuidadosamente seleccionados y recomendados por nuestro equipo. Creemos en la importancia de proporcionar recursos de aprendizaje accesibles para todos, y trabajamos arduamente para ampliar continuamente nuestra biblioteca de cursos gratuitos.</p>
+        <p>Únete a nuestra comunidad y comienza tu viaje hacia la maestría en desarrollo web.</p>
+        <div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <p>&copy; 2024 WebUniCode. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Únete a WebUniCode</h2>
+            <form action="/Pprincipal/index.html">
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="password">Contraseña:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <button>Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

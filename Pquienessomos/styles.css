@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'Ely Rounded';
+    src: url('fonts/ElyRounded-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Ely Rounded', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #161616;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.centered-content {
+    max-height: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #161616;
+    z-index: 1000;
+}
+
+.menu-item {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: none;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #ff8800;
+}
+
+.menu-item:hover .menu-dropdown {
+    display: block;
+}
+
+.menu-dropdown .menu-item {
+    border-bottom: none;
+    padding: 10px 20px;
+}
+
+.search-box {
+    position: relative;
+}
+
+#searchInput {
+    padding: 8px 30px 8px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #555;
+    color: #fff;
+    width: 200px;
+}
+
+#searchButton {
+    padding: 8px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: -40px;
+}
+
+.cart-icon, .account-icon {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.join-button {
+    background-color: #ff8800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    background-color: #cc6600;
+}
+
+.ad-section {
+    height: 570px;
+    background-color: #202020;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.ad-section img {
+    display: block;
+    max-width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+.take-now-button {
+    background-color: #ff8800;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+}
+
+.take-now-button:hover {
+    background-color: #cc6600;
+}
+
+.courses-section {
+    width: 70%;
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.course-group {
+    width: 70%;
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.course-card {
+    width: calc(25% - 20px);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    background-color: #ff8800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; 
+}
+
+.buy-button:hover {
+    background-color: #cc6600;
+}
+
+.intro-section {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.intro-section h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.intro-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: -15px;
+}
+
+
+.view-courses-button {
+    background-color: #ff8800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.view-courses-button:hover {
+    background-color: #cc6600;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.popup-content {
+    background-color: #f3f3f3;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    width: 25%;
+    text-align: center; /* Centrar contenido */
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup-content input[type="email"],
+.popup-content input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.popup-content button {
+    background-color: #ff8800; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #cc6600; /* Color al pasar el ratón */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #161616;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+.about-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #333;
+    font-size: 28px;
+}
+
+.about-section p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}

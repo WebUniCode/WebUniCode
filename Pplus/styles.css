@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Ely Rounded';
+    src: url('fonts/ElyRounded-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Ely Rounded', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #161616;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.centered-content {
+    max-height: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #161616;
+    z-index: 1000;
+}
+
+.menu-item {
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: none;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #ff8800;
+}
+
+.menu-item:hover .menu-dropdown {
+    display: block;
+}
+
+.menu-dropdown .menu-item {
+    border-bottom: none;
+    padding: 10px 20px;
+}
+
+.search-box {
+    position: relative;
+}
+
+#searchInput {
+    padding: 8px 30px 8px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #555;
+    color: #fff;
+    width: 200px;
+}
+
+#searchButton {
+    padding: 8px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: -40px;
+}
+
+.cart-icon, .account-icon {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.join-button {
+    background-color: #ff8800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    background-color: #cc6600;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.popup-content {
+    background-color: #f3f3f3;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    width: 25%;
+    text-align: center; /* Centrar contenido */
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup-content input[type="email"],
+.popup-content input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.popup-content button {
+    background-color: #ff8800; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #cc6600; /* Color al pasar el ratón */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.plus-section {
+    text-align: center;
+    background-color: #161616;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.plus-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.plus-subtitle {
+    font-size: 36px;
+    color: #ff8800;
+    margin-bottom: 30px;
+}
+
+.plus-description {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.plus-message {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+.subscription-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.anual-button,
+.mensual-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.anual-button.active,
+.mensual-button.active {
+    background-color: #ff8800;
+    color: white;
+}
+
+.subscribe-button {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #cc6600;
+}
+
+.container {
+    background-color: #161616; /* Color de fondo para plus-section */
+    display: flex;
+}
+
+.plus-section {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.subscription-card {
+    margin-top: 50px;
+    color: #fff;
+    flex: 1;
+    margin-left: 20px; /* Ajusta el margen entre las secciones si es necesario */
+}
+
+
+.footer {
+    background-color: #161616;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

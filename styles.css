@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#logo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11em;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 1.0);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#icon {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Ancho del icono */
+    height: auto; /* Altura ajustada automáticamente */
+    opacity: 0;
+    cursor: pointer; /* Cambiar cursor al pasar sobre el icono */
+    transition: opacity 1.5s ease-in-out;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - WebUniCode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1QPZaPcFYhgrjXib7rDn8t0fVzJAnfLGG9hbJY5u9yFhtVQuKphDqX+yPfJ1BUxY8L9vsmBqN8gufLpNtcZUlw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/img/ICON.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="centered-content">
+            <img src="/img/ICON-BLANCO.svg" alt="Icono" style="width: 60px; height: 60px; margin-right: -21%;">
+            <h1><a href="/Pprincipal/index.html" style="text-decoration: none; color: inherit;">WebUniCode</a></h1>
+            <div class="menu">
+                <!-- Menú omitido por brevedad -->
+            </div>
+        </div>
+    </div>
+
+    <div class="checkout-form">
+        <h2>Checkout</h2>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="card-number">Número de Tarjeta</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <div id="card-type"></div>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Fecha de Expiración</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">Código de Seguridad (CVV)</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <div class="form-group">
+                <label for="plan-info">Información del Plan</label>
+                <textarea id="plan-info" name="plan-info" rows="4" disabled>
+                    - Plan: Anual
+                    - Precio: $20.750COP/mes
+                    - Cobro anual de $249.000 COP
+                </textarea>
+            </div>
+            <div class="form-group">
+                <label for="purchase-policy">Política de Compra</label>
+                <p id="purchase-policy">Al hacer clic en "Pagar", aceptas nuestros términos y condiciones de compra.</p>
+            </div>
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
