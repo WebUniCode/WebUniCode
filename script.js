@@ -22,6 +22,6 @@ function redirectToMainPage() {
     
     // Redireccionar a la página principal después de desvanecer el video, el texto y el icono
     setTimeout(function() {
-        window.location.href = "Pprincipal/index.html";
+        window.location.href = "//Pprincipal/index.html";
     }, 1000); // Esperar 1 segundo antes de redireccionar
 }
